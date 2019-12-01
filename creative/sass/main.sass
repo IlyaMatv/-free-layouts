@@ -1,0 +1,458 @@
+$primary-color: #11749e;
+    
+*
+    margin: 0
+    padding: 0
+    font-family: Gotham Pro Medium, Gotham Pro Bold, Gotham Pro Light, sans-serif 
+    box-sizing: border-box
+    line-height: 1.6
+
+*:before,
+*:after 
+    box-sizing: border-box;
+
+.container
+        width: 100%
+        max-width: 1230px
+        margin: 0 auto
+        padding: 0 15px
+.header 
+    background: url(../img/header/header-bg.png) center no-repeat
+    background-size: cover
+    height: 100vh
+    position: relative
+    width: 100%
+    &:after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 2px
+        background-color: #626262
+        display: block
+        left: 0
+        top: 115px
+    .header__nav
+        display: flex
+        .logo 
+            margin: 22px 0 0 14px
+        .nav 
+            width: 700px
+            margin-left: 226px
+            min-height: 106px
+            margin-top: 10px
+            display: flex
+            ul 
+                list-style-type: none
+                display: flex
+                align-items: center
+                justify-content: space-around
+                width: 100%
+            a 
+                text-decoration: none
+                color: #fff
+                font-size: 20px
+                padding: 40px 13px 36px 13px
+                transition: .2s
+                &:hover 
+                    border-bottom: 6px solid #11749E
+        .social
+            margin-left: 20px
+            margin-top: 20px
+            max-height: 86px
+            width: 164px
+            color: #fff
+            display: flex
+            align-items: center
+            justify-content: space-around
+            i 
+                font-size: 18px
+    .header__text
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        min-height: 230px
+        margin-top: 228px
+        h1 
+            font-size: 148px
+            color: #fff
+            font-weight: bold
+            text-transform: uppercase
+            letter-spacing: -4px
+            line-height: 1
+        p 
+            font-size: 25px
+            text-transform: uppercase
+            color: #11749e
+            letter-spacing: 18px
+    .scroll
+        margin-top: 96px
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        font-size: 12px
+        color: #fff
+        img 
+            margin-top: 19px
+.section--main
+    background-color: #11749e
+    .main__info
+        margin: 0 auto
+        padding-top: 1px
+        min-height: 740px
+        .main__info--text 
+            font-size: 37px
+            color: #fff
+            text-transform: uppercase
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-top: 163px
+            letter-spacing: 0.5px
+            p 
+                position: relative
+                z-index: 999
+                &:after
+                    position: absolute
+                    content: 'W'
+                    color: #3C8DAF
+                    left: 29.5%
+                    top: -169px
+                    font-size: 237px
+                    z-index: -1
+                    display: block
+        .main__info--content
+            display: flex
+            justify-content: space-around
+            width: 100%
+            text-align: center
+            margin-top: 139px
+            .main__feature
+                width: 25%
+                color: #fff
+                display: flex
+                align-items: center
+                flex-direction: column
+                p 
+                    color: #fff
+                    text-transform: uppercase
+                    font-size: 18px
+                    margin-top: 18px
+                span 
+                    font-size: 15px
+                    margin-top: 23px
+                    line-height: 25px
+                    font-weight: light
+                .circle__img
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 134px
+                    height: 134px
+                    background-color: #2E85AA
+                    border-radius: 50%
+
+
+.section--gray
+    background-color: #222
+    display: flex
+.section--grey
+    background-color: #f3f3f3
+.container--akita
+    max-width: 1600px
+    width: 100%
+
+
+
+.akita
+    display: flex
+    .akita__item--text--first
+        color: #fff
+        padding-left: 146px
+    .akita__item--text--second
+        padding-left: 96px
+        color: #222
+    .akita__item
+        width: 50%
+        min-height: 447px
+        line-height: 1
+        letter-spacing: 1px
+        overflow: hidden
+        .akita__title
+            margin-top: 80px
+            font-size: 13px
+        .akita__subtitle
+            font-size: 25px
+            text-transform: uppercase
+        .akita__text
+            font-size: 15px
+            margin-top: 26px
+            width: 470px
+        .akita__item--img
+           height: 100%
+            
+
+
+
+.blog 
+    padding-bottom: 112px
+    width: 100%
+    .blog__header
+        text-align: center
+        font-size: 37px
+        color: #222222
+        text-transform: uppercase
+        letter-spacing: 1.5px
+        position: relative
+        margin-top: 160px
+        &:after
+            content: 'B'
+            position: absolute
+            color: #d7d7d7
+            display: block
+            font-size: 247px
+            font-weight: bold
+            transform: scale(.75, 1.0)
+            left: 42.2%
+            top: -170px
+            z-index: -1
+    .blog__header--text
+        font-size: 30px
+        color: #222
+        text-align: center
+        margin-top: 114px
+        padding-bottom: 50px;
+    .blog__items
+        width: 100%
+        display: flex
+        justify-content: space-between
+        .blog__item
+            text-align: center
+            width: 270px
+        .blog__img
+            padding-bottom: 30px
+        .blog__item--title
+            text-align: center
+            letter-spacing: 0.8px
+            font-size: 18px
+            text-transform: uppercase
+            color: $primary-color
+            font-weight: bold
+            padding-bottom: 24px
+        .blog__item--text
+            justify-content: space-between
+            max-width: 238px
+            font-size: 15px
+            line-height: 30px
+            margin-left: 15px
+.main__write
+    background-color: $primary-color
+    img
+        align-self: center
+    .container--write
+        display: flex
+        justify-content: space-between
+        padding: 110px 0
+        .write__item
+            display: flex
+            width: 50%
+            .write__text
+                color: #ffffff
+                font-size: 15px
+                width: 450px
+                margin-left: 35px
+.psd__free
+    min-height: 848px
+    background-image: url(../img/psd_phone/bg.png)
+    background-repeat: no-repeat
+    background-size: cover
+    .psd__phone
+        display: flex
+        align-items: center
+        color: #fff
+        .psd__items
+            width: 50%
+            margin-top: 86px
+            h2
+                font-size: 25px
+                font-weight: bold
+                text-transform: uppercase
+                letter-spacing: 1px
+                padding-bottom: 30px
+            p
+                font-size: 15px
+                display: inline-block
+                max-width: 478px
+                padding-bottom: 50px
+            .psd__btn
+                text-transform: uppercase
+                font-weight: bold
+                letter-spacing: 1px
+                margin-bottom: 25px
+                min-height: 40px
+                background-color: $primary-color
+                display: flex
+                align-items: center
+                span
+                    margin-left: 20px
+            .psd__btn--up
+                max-width: 370px
+            .psd__btn--middle
+                max-width: 400px
+            .psd__btn--down
+                max-width: 428px
+        .psd__iphone
+            margin: 100px 0 0 70px
+.team
+    min-height: 945px
+    .our__team--logo
+        font-size: 36px
+        text-transform: uppercase
+        font-weight: bold
+        position: relative
+        text-align: center
+        margin-top: 140px
+        &:after
+            content: 'T'
+            position: absolute
+            color: #d7d7d7
+            display: block
+            font-size: 247px
+            font-weight: bold
+            transform: scale(.75, 1.0)
+            left: 43.5%
+            top: -170px
+            z-index: -1
+    .our__team--text
+        font-size: 30px
+        text-align: center
+        margin-top: 140px
+        letter-spacing: 2.5px
+    .our__team--items
+        display: flex
+        .our__team--item
+            margin: 75px 20px 0 0
+            width: 270px
+            height: 414px
+            position: relative
+            img
+                height: 100%
+                position: absolute
+                z-index: -1
+            .person
+                position: absolute
+                background-color: #fff
+                width: 216px
+                height: 86px
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                left: 10%
+                bottom: -10%
+                z-index: 1000
+                p
+                    color: $primary-color
+                    font-size: 24px
+                    font-weight: bold
+                    text-transform: uppercase
+                span
+                    font-size: 15px
+                    font-weight: bold
+.section--sub
+    min-height: 850px
+    background-image: url(../img/sub/bg.png)
+    background-repeat: no-repeat
+    background-size: cover
+    padding-top: 1px
+    padding-bottom: 160px
+    .submit__text
+        margin-top: 220px
+        font-size: 26px
+        letter-spacing: 2px
+        text-align: center
+        color: #ffffff
+        text-transform: uppercase
+        position: relative
+        z-index: 1000
+        &:after
+            content: 'C'
+            position: absolute
+            color: #d7d7d7
+            display: block
+            font-size: 247px
+            font-weight: bold
+            transform: scale(.75, 1.0)
+            opacity: .3
+            left: 43.5%
+            top: -170px
+            z-index: -1
+    .submit__form
+        margin-top: 150px
+        .submit__items
+            display: flex
+            justify-content: space-between
+            input
+                background-color: transparent
+                width: 370px
+                height: 50px
+                border: 2px solid #fff
+                color: #fff
+                padding-left: 10px
+            ::-webkit-input-placeholder
+                color: #fff
+                text-indent: 10px;
+        .submit__area
+            margin-top: 42px
+            textarea
+                width: 100%
+                height: 150px
+                background-color: transparent
+                border: 2px solid #fff
+                padding: 10px 0 0 10px
+                color: #ffffff
+                outline: none
+                resize: none
+            ::-webkit-input-placeholder
+                color: #fff
+    .submit__btn
+        margin-top: 47px
+        text-align: center
+        a
+            color: #ffffff
+            text-transform: uppercase
+            text-decoration: none
+            font-size: 24px
+            padding: 20px 65px
+            background-color: $primary-color
+            font-weight: bold
+            letter-spacing: 1px
+            &:hover
+                background-color: transparent
+                border: 2px solid $primary-color
+                transition: .3s
+.map
+    iframe
+        width: 100%
+        height: 400px
+// #map
+//     width: 100%
+//     height: 400px
+
+footer
+    background-color: #222222
+    height: 115px
+    .footer--container
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+    p
+        font-size: 13px
+        color: #fff
+    span
+        font-size: 13px
+        color: #fff
+
+
