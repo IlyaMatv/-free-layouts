@@ -205,8 +205,11 @@
       padding: 0 0 100px 0; } }
 
 @media screen and (max-width: 375px) {
+  body .page .header .scroll {
+    margin-top: 40px;
+  }
   body .page .header .header__text {
-    margin-top: 140px; }
+    margin-top: 70px; }
     body .page .header .header__text h1 {
       font-size: 50px;
       letter-spacing: 0; }
